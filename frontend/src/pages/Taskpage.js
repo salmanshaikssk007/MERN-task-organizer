@@ -1,6 +1,6 @@
 import Styles from './Taskpage.module.css'
-import TaskList from './components/TaskList';
-import TaskActionButton from './components/TaskActionButton';
+import TaskList from './../components/TaskList';
+import TaskActionButton from './../components/TaskActionButton';
 import { useSelector } from 'react-redux';
 
 const Taskpage = () => {

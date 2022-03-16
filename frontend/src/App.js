@@ -1,7 +1,7 @@
-import { Link, Route } from 'react-router-dom';
+import { Link, Route , Routes } from 'react-router-dom';
 import Styles from './App.module.css';
 import Homepage from './pages/Homepage';
-import Loginpage from './pages/Loginpage';
+import Roompage from './pages/Roompage';
 import Taskpage from './pages/Taskpage';
 
 function App() {
@@ -10,11 +10,9 @@ function App() {
     <div className={Styles.App}>
       <Routes>
         <Route path='/'element={<Homepage />} />
-        <Route path='/loginpage' element={<Loginpage />} />
-        <Route path='/homepage/taskpage' element={<Taskpage />} />
+        <Route path='/roompage' element={<Roompage/>} />
+        <Route path='/taskpage' element={<Taskpage />} />
       </Routes> 
-      <Link to='/loginpage'>Login</Link>
-      <Link ></Link>
     </div>
   );
 
