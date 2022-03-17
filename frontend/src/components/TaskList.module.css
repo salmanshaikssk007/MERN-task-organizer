@@ -5,8 +5,10 @@
     padding-bottom: 1px;
     margin-right: 8px;
     height: 100%;
+    background-color: rgba(0, 183, 255, 0.829);
 }
 .container h4{
     padding-top: 10px;
     padding-left: 8px;
+    color: rgba(255, 255, 255, 0.788);
 }

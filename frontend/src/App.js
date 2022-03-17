@@ -10,8 +10,8 @@ function App() {
     <div className={Styles.App}>
       <Routes>
         <Route path='/'element={<Homepage />} />
-        <Route path='/roompage' element={<Roompage/>} />
-        <Route path='/taskpage' element={<Taskpage />} />
+        <Route path='/rooms' element={<Roompage/>} />
+        <Route path='/tasks' element={<Taskpage />} />
       </Routes> 
     </div>
   );
