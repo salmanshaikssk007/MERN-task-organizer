@@ -1,9 +1,9 @@
-import React from "react";
+import React , { useState } from "react";
 import Styles from './Roomcard.module.css'
 import Card from '@mui/material/Card';
 import image from './../assets/images/pic 5.jpg'
 import Switch from '@mui/material/Switch';
-import React, { useState } from 'react'
+
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
@@ -18,7 +18,7 @@ const Roomcard = (props) =>{
                 <h3>{props.title}</h3>
                 <div className={Styles.groupTask}>
                  <h4>Group Task</h4>   
-                <Switch {...label} label='Group Room'  />
+                <Switch {...label}  />
                 </div>
             </Card>
         </>
