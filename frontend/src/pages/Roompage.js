@@ -1,7 +1,9 @@
+import Styles from './Roompage.module.css'
+
 const Roompage = () => {
     return (
         <div>
-            roompage            
+            
         </div>
     )
 }

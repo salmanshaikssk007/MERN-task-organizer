@@ -8,11 +8,13 @@ function App() {
   
   return (
     <div className={Styles.App}>
-      <Routes>
-        <Route path='/'element={<Homepage />} />
-        <Route path='/rooms' element={<Roompage/>} />
-        <Route path='/tasks' element={<Taskpage />} />
-      </Routes> 
+      
+        <Routes>
+          <Route path='/'element={<Homepage />} />
+          <Route path='/rooms' element={<Roompage/>} />
+          <Route path='/tasks' element={<Taskpage />} />
+        </Routes> 
+      
     </div>
   );
 

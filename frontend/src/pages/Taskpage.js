@@ -9,7 +9,7 @@ const Taskpage = () => {
 
     return (
         <div>
-            <h1>Task Organier</h1>
+            <h1>Tasks</h1>
 
             {/* 
                 => mapping each list from the list reducer
