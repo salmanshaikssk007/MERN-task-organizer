@@ -8,8 +8,10 @@ const Taskpage = () => {
     const lists = useSelector(state => state.lists)
 
     return (
-        <div>
-            <h1>Tasks</h1>
+        <>
+            <div className={Styles.tasksHeader}>
+              <h1>Organize Tasks</h1> 
+            </div>
 
             {/* 
                 => mapping each list from the list reducer
@@ -19,7 +21,7 @@ const Taskpage = () => {
                 {lists.map(list => <TaskList key={list.id} title = {list.title} cards = {list.cards}/>)}
             <TaskActionButton list={lists} />
             </div>
-        </div>
+        </>
     )
 }
 

@@ -1,0 +1,13 @@
+.homepage{
+    display: flex;
+
+}
+.div1{
+    flex: 1;
+}
+.div2{
+    flex: 1;
+}
+.card{
+    margin-top: 100px;
+}
