@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import image from './../assets/images/pic 5.jpg'
 import Switch from '@mui/material/Switch';
 
-
+// need to figure out how to send state of switch globally
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 const Roomcard = (props) =>{
