@@ -1,19 +1,18 @@
-const { default: mongoose } = require("mongoose");
+const mongoose = require('mongoose');
 
-const taskModuleSchema = mongoose.Schema(
+// defining schema
+const taskModelSchema = mongoose.Schema(
     {
-        title :{
-            type : String ,
-            required : true ,
-            trim : true
-        },
-        tasks :{
-            type : mongoose.Schema.Types.ObjectId ,
-            required : true ,
-            trim : true 
-        }
+        sender : {type : mongoose.Schema.Types.ObjectId , ref : 'User'},
+        content : {type : String  , trim : true},
+        room : { type : mongoose.Schema.Types.ObjectId , ref : 'Room'},
+        taskList : {type : mongoose.Schema.Types.ObjectId , ref : 'TaskList'}
+    },
+    {
+        timestames : true ,
     }
 )
 
-const Task = mongoose.model("Task" , taskModuleSchema);
+const Task = mongoose.model('Task' , taskModelSchema);
+
 module.exports = Task ;
